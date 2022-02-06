@@ -11,11 +11,8 @@
     "src"
   ],
   "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com:linzeguang/yyz-toolkit.git"
+    "access": "public",
+    "registry": "https://github.com/linzeguang/yyz-toolkit.git"
   },
   "scripts": {
     "start": "tsdx watch",
