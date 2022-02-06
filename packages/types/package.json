@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "license": "MIT",
+  "name": "@yyz-toolkit/types",
+  "author": "linzeguang",
+  "module": "dist/types.esm.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  }
+}
