@@ -1,9 +1,7 @@
 import Web3 from "web3";
-import { chain } from "./chain";
+import { chainRpc } from "@yyz-toolkit/config";
 
 export function getWeb3() {
-  const { chainRpc } = chain;
-
   return new Web3(
     new Web3.providers.HttpProvider(chainRpc, {
       keepAlive: true,

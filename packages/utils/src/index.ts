@@ -1,14 +1,7 @@
-export { initChain, chain } from "./modules/chain";
+export { encrypt } from "./modules/encrypt";
 export { format } from "./modules/format";
 export { getBalance } from "./modules/getBalance";
+export { getContract } from "./modules/getContract";
 export { getLibrary } from "./modules/getLibrary";
 export { getWeb3 } from "./modules/getWeb3";
-export {
-  connectors,
-  POLLING_INTERVAL,
-  connectorLocalStorageKey,
-  walletLocalStorageKey,
-  injected,
-  walletConnect,
-  ConnectorsByName,
-} from "./modules/connector";
+export { simpleRpcProvider } from "./modules/provider";

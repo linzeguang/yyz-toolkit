@@ -3,7 +3,7 @@ import {
   JsonRpcFetchFunc,
   Web3Provider,
 } from "@ethersproject/providers";
-import { POLLING_INTERVAL } from "./connector";
+import { POLLING_INTERVAL } from "@yyz-toolkit/config";
 
 export const getLibrary = (
   provider: ExternalProvider | JsonRpcFetchFunc
