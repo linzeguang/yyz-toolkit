@@ -3,6 +3,8 @@
     "target": "es5",
     "module": "esnext",
     "lib": ["dom", "esnext"],
+    "allowJs": true,
+    "alwaysStrict": true,
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
@@ -12,7 +14,7 @@
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
-    "alwaysStrict": true,
+    "noEmit": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
@@ -20,5 +22,6 @@
     "moduleResolution": "node",
     "jsx": "react",
     "esModuleInterop": true
-  }
+  },
+  "include": ["typings.d.ts", "**/*.ts", "**/*.tsx"]
 }

@@ -1,0 +1,37 @@
+{
+  "name": "@yyz-toolkit/uikit",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "linzeguang",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/linzeguang/yyz-toolkit.git"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/uikit.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.4.18",
+    "@storybook/addons": "^6.4.18",
+    "@storybook/react": "^6.4.18"
+  }
+}

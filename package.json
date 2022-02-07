@@ -1,9 +1,6 @@
 {
   "name": "yyz-toolkit",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "publish:lerna": "lerna publish",
@@ -14,9 +11,16 @@
     "test": "lerna run test --parallel"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-replace": "^3.0.1",
+    "@rollup/plugin-url": "^6.1.0",
+    "@svgr/rollup": "^6.2.1",
     "@types/jest": "^27.4.0",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "babel-loader": "^8.2.3",
+    "bignumber.js": "^9.0.2",
     "lerna": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
