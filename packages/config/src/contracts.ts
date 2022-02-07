@@ -1,5 +1,5 @@
-import { Contracts } from "types";
-import { CHAIN_IDS } from "chain";
+import { Contracts } from "./types";
+import { CHAIN_IDS } from "./chain";
 
 const { GC_TEST, BSC } = CHAIN_IDS;
 

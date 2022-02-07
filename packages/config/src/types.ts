@@ -1,5 +1,5 @@
-import { ConnectorNames } from "connector";
-import { CHAIN_IDS } from "chain";
+import { ConnectorNames } from "./connector";
+import { CHAIN_IDS } from "./chain";
 
 export interface Chain {
   chainId: number;

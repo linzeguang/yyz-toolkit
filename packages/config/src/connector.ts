@@ -1,8 +1,8 @@
 import { InjectedConnector } from "@web3-react/injected-connector";
 import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
 import { Metamask, WalletConnect } from "@yyz-toolkit/uikit";
-import { chainId, chainRpc } from "chain";
-import { Connector } from "types";
+import { chainId, chainRpc } from "./chain";
+import { Connector } from "./types";
 
 // 轮询间隔
 export const POLLING_INTERVAL = 12000;
