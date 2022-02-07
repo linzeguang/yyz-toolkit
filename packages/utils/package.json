@@ -1,6 +1,6 @@
 {
   "name": "@yyz-toolkit/utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -29,8 +29,8 @@
     "@ethersproject/units": "^5.5.0",
     "@web3-react/injected-connector": "^6.0.7",
     "@web3-react/walletconnect-connector": "6.2.8",
-    "@yyz-toolkit/types": "^0.0.2",
-    "@yyz-toolkit/uikit": "^0.0.2",
+    "@yyz-toolkit/types": "^0.0.3",
+    "@yyz-toolkit/uikit": "^0.0.3",
     "web3": "^1.7.0"
   }
 }
