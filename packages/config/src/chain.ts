@@ -38,5 +38,5 @@ export function initChain(id: CHAIN_IDS) {
   console.log("当前链环境: ", id);
   chainId = id;
   chainRpc = chains[id].chainRpc;
-  chain = Object.assign(chains[id], chain);
+  chain = Object.assign(chain, chains[id]);
 }
