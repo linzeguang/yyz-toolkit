@@ -13,18 +13,10 @@ const GAMChainTest: Chain = {
   },
 };
 
-let chain: Chain = GAMChainTest;
-
-let isInit = false;
+export let chain: Chain = GAMChainTest;
 
 export function initChain(_chain: Chain) {
-  isInit = true;
   console.log("初始化链环境");
   console.log("当前链环境: ", _chain.chainId);
   chain = Object.assign(_chain, chain);
-}
-
-export function getChain() {
-  if (!isInit) console.warn("未初始化链环境，当前链环境为: ", chain.chainId);
-  return chain;
 }

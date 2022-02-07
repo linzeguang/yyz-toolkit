@@ -1,8 +1,8 @@
 import Web3 from "web3";
-import { getChain } from "./chain";
+import { chain } from "./chain";
 
 export function getWeb3() {
-  const { chainRpc } = getChain();
+  const { chainRpc } = chain;
 
   return new Web3(
     new Web3.providers.HttpProvider(chainRpc, {
