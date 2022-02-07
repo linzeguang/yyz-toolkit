@@ -1,6 +1,6 @@
 {
   "name": "@yyz-toolkit/config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -26,6 +26,6 @@
   "dependencies": {
     "@web3-react/injected-connector": "^6.0.7",
     "@web3-react/walletconnect-connector": "^6.2.10",
-    "@yyz-toolkit/uikit": "^0.0.6"
+    "@yyz-toolkit/uikit": "^0.0.7"
   }
 }
