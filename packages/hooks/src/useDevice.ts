@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function useDevice() {
+export function useDevice() {
   const [device, setDevice] = useState({
     isIE: false,
     isOpera: false,

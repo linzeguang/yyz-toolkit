@@ -5,10 +5,10 @@ import {
   ConnectorNames,
   connectors,
 } from "@yyz-toolkit/config";
-import useConnect from "./useConnect";
+import { useConnect } from "./useConnect";
 
 // 自动连接钱包
-export default function useEagerConnect() {
+export function useEagerConnect() {
   const [netWorkId, setNetWorkId] = useState(chainId.toString());
   const { connect, disconnect } = useConnect();
 

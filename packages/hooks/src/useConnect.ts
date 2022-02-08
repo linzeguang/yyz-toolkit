@@ -17,7 +17,7 @@ import {
 } from "@yyz-toolkit/utils";
 import { useCallback } from "react";
 
-export default function useConnect() {
+export function useConnect() {
   const { activate, deactivate } = useWeb3React();
 
   const connectWallet = useCallback(

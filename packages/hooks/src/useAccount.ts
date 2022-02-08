@@ -6,7 +6,7 @@ import {
 } from "@yyz-toolkit/utils";
 import { useEffect, useState } from "react";
 
-export default function useAccount() {
+export function useAccount() {
   const { active, account } = useWeb3React();
   const [balance, setBalance] = useState("--");
 

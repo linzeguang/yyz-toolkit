@@ -5,7 +5,7 @@ import {
   getBalance,
 } from "@yyz-toolkit/utils";
 
-export default function useBalance(address: string) {
+export function useBalance(address: string) {
   const [balance, setBalance] = useState("");
 
   const fetch = useCallback(() => {
