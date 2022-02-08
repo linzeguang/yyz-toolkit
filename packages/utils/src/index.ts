@@ -11,4 +11,4 @@ export * from "./walletStorage";
 export * from "@ethersproject/providers";
 export * from "@ethersproject/units";
 export * from "@web3-react/core";
-export * from "@web3-react/core/dist/types";
+export { Web3ReactContextInterface } from "@web3-react/core/dist/types";
