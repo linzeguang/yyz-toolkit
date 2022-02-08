@@ -4,6 +4,15 @@ import { Metamask, WalletConnect } from "@yyz-toolkit/uikit";
 import { chainId, chainRpc } from "./chain";
 import { Connector } from "./types";
 
+export {
+  NoEthereumProviderError,
+  UserRejectedRequestError as UserRejectedRequestErrorInjected,
+} from "@web3-react/injected-connector";
+export {
+  WalletConnectConnector,
+  UserRejectedRequestError as UserRejectedRequestErrorWalletConnect,
+} from "@web3-react/walletconnect-connector";
+
 // 轮询间隔
 export const POLLING_INTERVAL = 12000;
 export const connectorLocalStorageKey = "connectorIdv2";

@@ -4,4 +4,5 @@ declare interface Window {
     request: (...args: any[]) => Promise<string>;
     on: any;
   };
+  MSStream?: any;
 }

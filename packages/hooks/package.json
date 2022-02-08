@@ -1,6 +1,6 @@
 {
-  "name": "@yyz-toolkit/utils",
-  "version": "0.0.10",
+  "name": "@yyz-toolkit/hooks",
+  "version": "0.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -25,13 +25,7 @@
     "test": "tsdx test --passWithNoTests"
   },
   "dependencies": {
-    "@ethersproject/abstract-signer": "^5.5.0",
-    "@ethersproject/contracts": "^5.5.0",
-    "@ethersproject/providers": "^5.5.3",
-    "@ethersproject/units": "^5.5.0",
-    "@web3-react/core": "^6.1.9",
     "@yyz-toolkit/config": "^0.0.5",
-    "bignumber.js": "^9.0.2",
-    "web3": "^1.7.0"
+    "@yyz-toolkit/utils": "^0.0.10"
   }
 }
