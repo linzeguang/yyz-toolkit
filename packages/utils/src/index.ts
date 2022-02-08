@@ -8,5 +8,7 @@ export * from "./getBlock2Timestamp";
 export * from "./provider";
 export * from "./metamask";
 export * from "./walletStorage";
+export * from "@ethersproject/providers";
 export * from "@ethersproject/units";
+export * from "@web3-react/core";
 export * from "@web3-react/core/dist/types";
