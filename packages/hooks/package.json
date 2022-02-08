@@ -1,6 +1,6 @@
 {
   "name": "@yyz-toolkit/hooks",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publishConfig": {
     "access": "public"
   },
@@ -25,7 +25,7 @@
     "test": "tsdx test --passWithNoTests"
   },
   "dependencies": {
-    "@yyz-toolkit/config": "^0.0.7",
-    "@yyz-toolkit/utils": "^0.0.14"
+    "@yyz-toolkit/config": "^0.0.8",
+    "@yyz-toolkit/utils": "^0.0.15"
   }
 }
