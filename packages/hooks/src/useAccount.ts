@@ -1,10 +1,5 @@
-import {
-  addThousandSeparator,
-  getBalance,
-  useWeb3React,
-  formatEther,
-} from "@yyz-toolkit/utils";
 import { useEffect, useState } from "react";
+import { getBalance, useWeb3React } from "@yyz-toolkit/utils";
 
 export function useAccount() {
   const { active, account } = useWeb3React();
@@ -14,8 +9,8 @@ export function useAccount() {
     console.log("account: ", account);
     if (account) {
       try {
-        getBalance(account).then((balance: any) => {
-          setBalance(addThousandSeparator(formatEther(balance), 6));
+        getBalance(account).then((balance) => {
+          setBalance(balance || "--");
         });
       } catch {
         setBalance("--");
