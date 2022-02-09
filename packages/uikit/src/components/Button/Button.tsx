@@ -1,32 +1,27 @@
-import React, { cloneElement, ElementType, isValidElement } from "react";
-import { getExternalLinkProps } from "../../utils";
+import styled from "styled-components";
+import { layout, space } from "styled-system";
 import { ButtonProps } from "./types";
-import { StyledButton } from "./styled";
 
-const Button = <E extends ElementType = "button">(props: ButtonProps<E>) => {
-  const {
-    startIcon,
-    endIcon,
-    external,
-    className,
-    disabled,
-    children,
-    ...rest
-  } = props;
-  const internalProps = external ? getExternalLinkProps() : {};
+const Button = styled.button<ButtonProps>`
+  cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  background-color: transparent;
+  border: 0;
+  border-radius: 8px;
+  outline: 0;
+  opacity: ${({ disabled }) => (disabled ? "0.6" : "1")};
+  transition: background-color 300ms, opacity 300ms;
 
-  return (
-    <StyledButton disabled={disabled} {...internalProps} {...rest}>
-      {isValidElement(startIcon) && cloneElement(startIcon)}
-      {children}
-      {isValidElement(endIcon) && cloneElement(endIcon)}
-    </StyledButton>
-  );
-};
+  &:hover,
+  &:active {
+    opacity: 0.85;
+  }
 
-Button.defaultProps = {
-  external: false,
-  disabled: false,
-};
+  ${layout}
+  ${space}
+`;
 
 export default Button;
