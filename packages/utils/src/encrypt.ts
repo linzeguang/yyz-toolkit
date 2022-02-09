@@ -18,7 +18,7 @@ export function encrypt(
   if (value) {
     const startStr = value.substring(0, start);
     const endStr = value.substring(value.length - end, value.length);
-    const fillStr = new Array(fillLength).fill(fill).join();
+    const fillStr = new Array(fillLength).fill(fill).join("");
     return `${startStr}${fillStr}${endStr}`;
   }
   return "--";
