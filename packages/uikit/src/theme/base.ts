@@ -13,11 +13,11 @@ const breakpoints: Breakpoints = Object.values(breakpointMap).map(
 );
 
 const mediaQueries: MediaQueries = {
-  xs: `@media screen and (max-width: ${breakpointMap.xs}px)`,
-  sm: `@media screen and (max-width: ${breakpointMap.sm}px)`,
-  md: `@media screen and (max-width: ${breakpointMap.md}px)`,
-  lg: `@media screen and (max-width: ${breakpointMap.lg}px)`,
-  xl: `@media screen and (max-width: ${breakpointMap.xl}px)`,
+  xs: `@media screen and (min-width: ${breakpointMap.xs}px)`,
+  sm: `@media screen and (min-width: ${breakpointMap.sm}px)`,
+  md: `@media screen and (min-width: ${breakpointMap.md}px)`,
+  lg: `@media screen and (min-width: ${breakpointMap.lg}px)`,
+  xl: `@media screen and (min-width: ${breakpointMap.xl}px)`,
 };
 
 export default {
