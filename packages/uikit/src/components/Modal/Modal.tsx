@@ -4,7 +4,7 @@ import { GlobalStyle, ModalTitle } from "./styled";
 import { ModalProps } from "./types";
 
 const Modal: React.FC<ModalProps> = (props) => {
-  const { visible, title, afterClose, children } = props;
+  const { visible, title, onClose, afterClose, children } = props;
 
   return (
     <React.Fragment>
@@ -13,6 +13,7 @@ const Modal: React.FC<ModalProps> = (props) => {
         visible={visible}
         animation="zoom"
         maskAnimation="fade"
+        onClose={onClose}
         afterClose={afterClose}
         destroyOnClose
       >
