@@ -1,44 +1,26 @@
-import React, {
-  PropsWithChildren,
-  useCallback,
-  useImperativeHandle,
-  useState,
-} from "react";
+import React from "react";
 import Dialog from "rc-dialog";
 import { GlobalStyle, ModalTitle } from "./styled";
-import { ModalHandleProps, ModalProps } from "./types";
+import { ModalProps } from "./types";
 
-const Modal = React.forwardRef<ModalHandleProps, PropsWithChildren<ModalProps>>(
-  (props, ref) => {
-    const { title, afterClose, children } = props;
-    const [visible, setVisible] = useState(false);
+const Modal: React.FC<ModalProps> = (props) => {
+  const { visible, title, afterClose, children } = props;
 
-    const toggle = useCallback(
-      (boo?: boolean) => {
-        setVisible(boo ?? !visible);
-      },
-      [visible]
-    );
-
-    useImperativeHandle(ref, () => ({ toggle, visible }), [toggle, visible]);
-
-    return (
-      <React.Fragment>
-        <GlobalStyle />
-        <Dialog
-          visible={visible}
-          animation="zoom"
-          maskAnimation="fade"
-          afterClose={afterClose}
-          onClose={() => toggle()}
-          destroyOnClose
-        >
-          {title && <ModalTitle>{title}</ModalTitle>}
-          {children}
-        </Dialog>
-      </React.Fragment>
-    );
-  }
-);
+  return (
+    <React.Fragment>
+      <GlobalStyle />
+      <Dialog
+        visible={visible}
+        animation="zoom"
+        maskAnimation="fade"
+        afterClose={afterClose}
+        destroyOnClose
+      >
+        {title && <ModalTitle>{title}</ModalTitle>}
+        {children}
+      </Dialog>
+    </React.Fragment>
+  );
+};
 
 export default Modal;

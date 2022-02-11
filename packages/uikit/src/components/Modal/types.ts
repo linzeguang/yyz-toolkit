@@ -1,9 +1,5 @@
 export interface ModalProps {
+  visible: boolean;
   title?: string;
   afterClose?: () => void;
-}
-
-export interface ModalHandleProps {
-  toggle: (boo?: boolean) => void;
-  visible: boolean;
 }
