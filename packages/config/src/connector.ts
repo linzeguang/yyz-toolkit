@@ -1,6 +1,6 @@
 import { InjectedConnector } from "@web3-react/injected-connector";
 import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
-import { Metamask, WalletConnect } from "@yyz-toolkit/uikit";
+import { Metamask, WalletConnect } from "./svgr";
 import { chainId, chainRpc } from "./chain";
 import { Connector } from "./types";
 

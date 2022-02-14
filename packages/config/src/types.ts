@@ -28,3 +28,7 @@ export interface Connector {
   connectorId: ConnectorNames;
   priority: number;
 }
+
+export interface SvgProps extends React.SVGAttributes<SVGSVGElement> {
+  className?: string;
+}
