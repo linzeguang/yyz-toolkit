@@ -42,7 +42,6 @@ export let chainRpc: Chain["chainRpc"] = chains[chainId].chainRpc;
 export let chain: Chain = chains[chainId];
 
 export function initChain(id: CHAIN_IDS) {
-  console.log("初始化链环境");
   console.log("当前链环境: ", id);
   chainId = id;
   chainRpc = chains[id].chainRpc;
