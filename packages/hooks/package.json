@@ -1,6 +1,6 @@
 {
   "name": "@yyz-toolkit/hooks",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "publishConfig": {
     "access": "public"
   },
@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "@yyz-toolkit/config": "^0.0.27",
-    "@yyz-toolkit/utils": "^0.0.35"
+    "@yyz-toolkit/utils": "^0.0.36"
   }
 }
