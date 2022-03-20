@@ -1,5 +1,6 @@
 export * from "./encrypt";
 export * from "./format";
+export * from "./getAddress";
 export * from "./getBalance";
 export * from "./getContract";
 export * from "./getLibrary";
