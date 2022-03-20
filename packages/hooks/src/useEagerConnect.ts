@@ -4,6 +4,7 @@ import {
   connectorLocalStorageKey,
   ConnectorNames,
   connectors,
+  injected,
 } from "@yyz-toolkit/config";
 import { useConnect } from "./useConnect";
 
@@ -21,8 +22,24 @@ export function useEagerConnect() {
     );
 
     if (connectorId && walletConfig && chainId.toString() === netWorkId) {
+      const isConnectorInjected = connectorId === ConnectorNames.Injected;
       console.log("connect");
-      connect(walletConfig);
+
+      if (isConnectorInjected) {
+        injected.isAuthorized().then((isAuthorized) => {
+          if (isAuthorized) {
+            setTimeout(() => {
+              connect(walletConfig);
+            });
+          } else {
+            if (window.ethereum) {
+              setTimeout(() => {
+                connect(walletConfig);
+              });
+            }
+          }
+        });
+      }
     } else {
       console.log("disconnect");
       disconnect();
